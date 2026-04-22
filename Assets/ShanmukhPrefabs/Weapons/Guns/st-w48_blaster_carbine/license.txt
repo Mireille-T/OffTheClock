@@ -1,0 +1,11 @@
+Model Information:
+* title:	ST-W48 Blaster Carbine Star Wars
+* source:	https://sketchfab.com/3d-models/st-w48-blaster-carbine-star-wars-ff8c5963f07d482d89552a722bf7c83d
+* author:	Nodashii (https://sketchfab.com/Nodashii)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "ST-W48 Blaster Carbine Star Wars" (https://sketchfab.com/3d-models/st-w48-blaster-carbine-star-wars-ff8c5963f07d482d89552a722bf7c83d) by Nodashii (https://sketchfab.com/Nodashii) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
