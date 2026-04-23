@@ -1,0 +1,11 @@
+Model Information:
+* title:	Laser Revolver - Game Asset
+* source:	https://sketchfab.com/3d-models/laser-revolver-game-asset-79747d0a34c04681a225f2c2d3d1d5b5
+* author:	Michael Harris (https://sketchfab.com/dmotion)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Laser Revolver - Game Asset" (https://sketchfab.com/3d-models/laser-revolver-game-asset-79747d0a34c04681a225f2c2d3d1d5b5) by Michael Harris (https://sketchfab.com/dmotion) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

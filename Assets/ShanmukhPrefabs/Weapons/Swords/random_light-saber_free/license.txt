@@ -1,0 +1,11 @@
+Model Information:
+* title:	Random Light-saber [FREE]
+* source:	https://sketchfab.com/3d-models/random-light-saber-free-14b3e8bbe1af4ffcaa208c0402d3e6d0
+* author:	VertexDon (https://sketchfab.com/Don42)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Random Light-saber [FREE]" (https://sketchfab.com/3d-models/random-light-saber-free-14b3e8bbe1af4ffcaa208c0402d3e6d0) by VertexDon (https://sketchfab.com/Don42) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

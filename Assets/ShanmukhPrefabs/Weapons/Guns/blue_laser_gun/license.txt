@@ -1,0 +1,11 @@
+Model Information:
+* title:	LASER GUN
+* source:	https://sketchfab.com/3d-models/laser-gun-79382b1850684281a1afbe8c62165534
+* author:	RITWIK777 (https://sketchfab.com/RITWIK777)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "LASER GUN" (https://sketchfab.com/3d-models/laser-gun-79382b1850684281a1afbe8c62165534) by RITWIK777 (https://sketchfab.com/RITWIK777) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2876394759553592312
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 136330, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_Name
+      value: Green Laser Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 499656, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.119924
+      objectReference: {fileID: 0}
+    - target: {fileID: 499656, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.00000022746951
+      objectReference: {fileID: 0}
+    - target: {fileID: 499656, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -71.270065
+      objectReference: {fileID: 0}
+    - target: {fileID: 499656, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 499656, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499656, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499656, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499656, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499656, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499656, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11489952, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_lineWidth
+      value: 67
+      objectReference: {fileID: 0}
+    - target: {fileID: 11489952, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_lightSaberFactor
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 11489952, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_doNotOverwriteTemplateMaterialProperties
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 136330, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2609693456114694326}
+  m_SourcePrefab: {fileID: 100100000, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+--- !u!1 &2876394759553728370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 136330, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+  m_PrefabInstance: {fileID: 2876394759553592312}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2609693456114694326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2876394759553728370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1ce953e50726af459c50a7feb45fc55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OffTheClock.Combat.PlayerProjectile
+  damage: 20
+  lifetime: 5
