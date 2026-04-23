@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &9075200630296894379
+--- !u!1001 &6883107999530469039
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 136330, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
       propertyPath: m_Name
-      value: Orange Laser Variant
+      value: Orange Laser
       objectReference: {fileID: 0}
     - target: {fileID: 499656, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -82,20 +82,20 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 136330, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1832404537031615966}
+      addedObject: {fileID: 8274896203234311083}
   m_SourcePrefab: {fileID: 100100000, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
---- !u!1 &9075200630296760097 stripped
+--- !u!1 &6883107999530603045 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 136330, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
-  m_PrefabInstance: {fileID: 9075200630296894379}
+  m_PrefabInstance: {fileID: 6883107999530469039}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1832404537031615966
+--- !u!114 &8274896203234311083
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9075200630296760097}
+  m_GameObject: {fileID: 6883107999530603045}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d1ce953e50726af459c50a7feb45fc55, type: 3}
