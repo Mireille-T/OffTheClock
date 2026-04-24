@@ -9,6 +9,7 @@ public class PaperSpawner : MonoBehaviour
     public GameObject paperPrefab;
     public GameObject questionBlockPrefab;
     public QuestionBank questionBank;
+    public AudioSource globalSpeaker;
 
     [Header("Movement Transforms")]
     public Transform pStart;
@@ -67,6 +68,8 @@ public class PaperSpawner : MonoBehaviour
 
             // Instantiate the UI block
             GameObject block = Instantiate(questionBlockPrefab, container, false);
+
+            block.GetComponent<QuestionController>().deskSpeaker = globalSpeaker;
 
             block.transform.localScale = Vector3.one; 
             block.transform.localRotation = Quaternion.identity;
