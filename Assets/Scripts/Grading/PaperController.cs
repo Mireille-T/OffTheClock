@@ -4,10 +4,10 @@ using System.Collections;
 public class PaperController : MonoBehaviour
 {
     public int totalQuestions;
+    
     private int questionsGraded = 0;
     private bool isDone = false;
 
-    // These will be passed in by the Spawner
     [HideInInspector] public Transform startPos, intermediatePos, gradingPos, donePos;
 
     public void Init(Transform s, Transform i, Transform g, Transform d, int qCount)
@@ -29,9 +29,7 @@ public class PaperController : MonoBehaviour
 
     IEnumerator FlowRoutine()
     {
-        // 1. Move to Intermediate
         yield return StartCoroutine(MoveTo(intermediatePos.position, intermediatePos.rotation, 1.0f));
-        // 2. Move to Main Grading Desk
         yield return StartCoroutine(MoveTo(gradingPos.position, gradingPos.rotation, 1.0f));
     }
 
@@ -44,7 +42,6 @@ public class PaperController : MonoBehaviour
 
         FindObjectOfType<PaperSpawner>().SpawnPaper();
         
-        // Optional: Destroy or deactivate after reaching done
         Destroy(gameObject, 1f); 
     }
 

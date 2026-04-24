@@ -5,9 +5,17 @@ public class QuestionController : MonoBehaviour
     // The hidden truth: Did the simulated student get this right?
     public bool isStudentAnswerCorrect; 
 
+    public AudioSource deskSpeaker;
+
     // The GradingZone calls this when the player stamps
     public void ReceivePlayerGrade(bool playerStampedCorrectly)
     {
+
+        if (deskSpeaker != null)
+        {
+            deskSpeaker.Play();
+        }
+        
         if (playerStampedCorrectly == isStudentAnswerCorrect)
         {
             Debug.Log("Good grading! You caught it.");
