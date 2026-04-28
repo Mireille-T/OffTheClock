@@ -55,7 +55,6 @@ public class TeleportManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other);
         if (other.CompareTag(CONTROLLER_TAG))
         {
             secondsSinceTriggered = 0.0f;

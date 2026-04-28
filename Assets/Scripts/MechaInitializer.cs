@@ -5,6 +5,7 @@ public class MechaInitializer : MonoBehaviour
 {
     [SerializeField] private UniversalRendererData rendererData;
     [SerializeField] private Transform classroomEnvironment = null;
+    [SerializeField] private GameObject classroomAddons = null;
     [SerializeField] private GameObject mechaCockpit = null;
 
     private TeleportManager teleportManager = null;
@@ -19,6 +20,7 @@ public class MechaInitializer : MonoBehaviour
             if (teleportManager != null)
             {
                 teleportManager.PositionToTeleport = classroomEnvironment.position;
+                teleportManager.Initializer = this.gameObject;
             }
         }
     }
@@ -41,6 +43,11 @@ public class MechaInitializer : MonoBehaviour
         if (cockpitInstance != null)
         {
             cockpitInstance.SetActive(false);
+        }
+
+        if (classroomAddons != null)
+        {
+            classroomAddons.SetActive(true);
         }
     }
 }

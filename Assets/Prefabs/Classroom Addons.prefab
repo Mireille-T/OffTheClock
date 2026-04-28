@@ -44,4 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72d57fa952f6e2e458ded7c51b8a8e68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClassroomInitializer
+  rendererData: {fileID: 11400000, guid: 65bc7dbf4170f435aa868c779acfb082, type: 2}
+  mechaEnvironment: {fileID: 0}
+  mechaAddons: {fileID: 0}
   glasses: {fileID: 6322171442850680260, guid: e476e3447748c76408da360ca489c3a4, type: 3}
