@@ -7,15 +7,16 @@ public class TeleportManager : MonoBehaviour
     [SerializeField] private GameObject otherCameraView = null;
     [SerializeField] private float secondsNeededToTeleport = 3.0f;
     [SerializeField] private float yPosToTeleport = 0.134f;
-    [SerializeField] private float particleSpeedUpMultiplier = 5.0f;
+    [SerializeField] private float particleRateMultiplier = 5.0f;
     [SerializeField] private float particleSizeUpMultiplier = 5.0f;
 
     private AudioSource audioSource = null;
     private ParticleSystem particles = null;
     private ParticleSystem.MainModule particlesMain;
+    private ParticleSystem.EmissionModule particlesEmission;
     private float secondsSinceTriggered = -1.0f;
     private float originalCameraViewYPos = 0.0f;
-    private float initialParticleSpeed = 0.0f;
+    private float initialParticleRate = 0.0f;
     private float initialParticleSize = 0.0f;
 
     private void Start()
@@ -27,7 +28,8 @@ public class TeleportManager : MonoBehaviour
         {
             particles.Stop();
             particlesMain = particles.main;
-            initialParticleSpeed = particlesMain.startSpeedMultiplier;
+            particlesEmission = particles.emission;
+            initialParticleRate = particlesEmission.rateOverTimeMultiplier;
             initialParticleSize = particlesMain.startSizeMultiplier;
         }
     }
@@ -79,7 +81,7 @@ public class TeleportManager : MonoBehaviour
             }
             if (particles != null)
             {
-                particlesMain.startSpeedMultiplier += Time.deltaTime * particleSpeedUpMultiplier;
+                particlesEmission.rateOverTimeMultiplier += Time.deltaTime * particleRateMultiplier;
                 particlesMain.startSizeMultiplier += Time.deltaTime * particleSizeUpMultiplier;
             }
         }
@@ -103,7 +105,7 @@ public class TeleportManager : MonoBehaviour
             if (particles != null)
             {
                 particles.Stop();
-                particlesMain.startSpeedMultiplier = initialParticleSpeed;
+                particlesEmission.rateOverTimeMultiplier = initialParticleRate;
                 particlesMain.startSizeMultiplier = initialParticleSize;
             }
         }
