@@ -1,3 +1,4 @@
+using Unity.XR.CoreUtils;
 using UnityEngine;
 
 public class TeleportManager : MonoBehaviour
@@ -9,6 +10,24 @@ public class TeleportManager : MonoBehaviour
     [SerializeField] private float yPosToTeleport = 0.134f;
     [SerializeField] private float particleRateMultiplier = 5.0f;
     [SerializeField] private float particleSizeUpMultiplier = 5.0f;
+
+    private GameObject initializer = null;
+    public GameObject Initializer
+    {
+        set
+        {
+            initializer = value;
+        }
+    }
+
+    private Vector3 positionToTeleport;
+    public Vector3 PositionToTeleport
+    {
+        set
+        {
+            positionToTeleport = value;
+        }
+    }
 
     private AudioSource audioSource = null;
     private ParticleSystem particles = null;
@@ -62,7 +81,6 @@ public class TeleportManager : MonoBehaviour
         {
             if (secondsSinceTriggered >= secondsNeededToTeleport)
             {
-                // TODO: Teleport
                 if (audioSource != null)
                 {
                     audioSource.Stop();
@@ -70,6 +88,12 @@ public class TeleportManager : MonoBehaviour
                 if (particles != null)
                 {
                     particles.Stop();
+                }
+
+                FindAnyObjectByType<XROrigin>().transform.position = positionToTeleport;
+                if (initializer != null)
+                {
+                    initializer.SetActive(false);
                 }
             }
 

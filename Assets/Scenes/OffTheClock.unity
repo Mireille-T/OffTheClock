@@ -176,6 +176,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 512783453377260551, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: classroomEnvironment
+      value: 
+      objectReference: {fileID: 1747660390}
     - target: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Name
       value: XR Origin (XR Rig)
@@ -225,6 +229,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+--- !u!4 &1747660390 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1543574292732037593, guid: 9ce43059b9feb914fa67bbc656a8fd0d, type: 3}
+  m_PrefabInstance: {fileID: 2616326951930341560}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2616326951930341560
 PrefabInstance:
   m_ObjectHideFlags: 0
