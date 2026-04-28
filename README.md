@@ -3,6 +3,8 @@
 By: Talha Coskun (tcoskun2), Mireille Tan (mt48), Shanmukh Upadhyayula (supad83), Aimee Zhang (jingyi39)
 
 ## Attributions
+- Freesound
+  - <a href="https://freesound.org/people/nightcraftsounds/sounds/266170/">Energy Charging</a> by <a href="https://freesound.org/people/nightcraftsounds/">nightcraftsounds</a> | License: <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0</a>
 - SketchFab
   - ["Button By Ghost73"](https://skfb.ly/p9Hpp) by Ghost73 is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
   - ["Ceiling Light"](https://skfb.ly/6WXO9) by Heliona is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
