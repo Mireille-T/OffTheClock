@@ -119,6 +119,16 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &403191067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7107814574869680439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 1536128914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &607251355 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2130062414806800967, guid: 2117bf626da046b4aa2468292a7da4dd, type: 3}
+  m_PrefabInstance: {fileID: 8936156198881731745}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,6 +178,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &994791583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8851604725521882626, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 1536128914}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1536128914
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -176,6 +191,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 512783453377260551, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: classroomAddons
+      value: 
+      objectReference: {fileID: 403191067}
+    - target: {fileID: 512783453377260551, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: classroomEnvironment
+      value: 
+      objectReference: {fileID: 1747660390}
     - target: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Name
       value: XR Origin (XR Rig)
@@ -220,11 +243,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5936447518726948728, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: mechaAddons
+      value: 
+      objectReference: {fileID: 994791583}
+    - target: {fileID: 5936447518726948728, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: mechaEnvironment
+      value: 
+      objectReference: {fileID: 607251355}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+--- !u!4 &1747660390 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1543574292732037593, guid: 9ce43059b9feb914fa67bbc656a8fd0d, type: 3}
+  m_PrefabInstance: {fileID: 2616326951930341560}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2616326951930341560
 PrefabInstance:
   m_ObjectHideFlags: 0

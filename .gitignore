@@ -77,3 +77,6 @@ crashlytics-build.properties
 # SketchFab for Unity plugin
 [Aa]ssets/SketchFab for Unity/
 [Aa]ssets/SketchFab for Unity.meta 
+
+# Interaction Simulation
+[Aa]ssets/Samples/XR Interaction Toolkit/*/XR Interaction Simulator*

@@ -1,0 +1,8 @@
+Model Information:
+* title:	Reading Glasses
+* source:	https://sketchfab.com/3d-models/reading-glasses-cb92f0ac50ea46d5ab17036f279c3aa4
+* author:	assetfactory (https://sketchfab.com/assetfactory)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

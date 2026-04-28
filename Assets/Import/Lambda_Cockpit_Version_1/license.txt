@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lambda Cockpit Version 1
+* source:	https://sketchfab.com/3d-models/lambda-cockpit-version-1-20cb5b1aa4cc47d2a96f29dc634efe38
+* author:	MichaelEGA (https://sketchfab.com/MichaelEGA)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lambda Cockpit Version 1" (https://sketchfab.com/3d-models/lambda-cockpit-version-1-20cb5b1aa4cc47d2a96f29dc634efe38) by MichaelEGA (https://sketchfab.com/MichaelEGA) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
