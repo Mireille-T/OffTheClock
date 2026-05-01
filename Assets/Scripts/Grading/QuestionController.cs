@@ -7,27 +7,37 @@ public class QuestionController : MonoBehaviour
 
     public AudioSource deskSpeaker;
 
+    private bool _isAlreadyGraded = false;
+
     // The GradingZone calls this when the player stamps
-    public void ReceivePlayerGrade(bool playerStampedCorrectly)
+    public bool ReceivePlayerGrade(bool playerStampedCorrectly)
     {
+
+        if (_isAlreadyGraded) return false;
+        _isAlreadyGraded = true;
 
         if (deskSpeaker != null)
         {
             deskSpeaker.Play();
         }
+
+        bool isAccuracyCorrect = (playerStampedCorrectly == isStudentAnswerCorrect);
         
-        if (playerStampedCorrectly == isStudentAnswerCorrect)
+        if (GradingManager.Instance != null)
+        {
+            GradingManager.Instance.ProcessGrade(isAccuracyCorrect);
+        }
+
+        if (isAccuracyCorrect)
         {
             Debug.Log("Good grading! You caught it.");
-            // Add to player score
         }
         else
         {
-            Debug.Log("Bad grading! You marked a wrong answer as Correct (or vice versa).");
-            // Penalize player score
+            Debug.Log("Bad grading! Mistake recorded.");
         }
 
-        // Tell the main paper that another question is finished
         GetComponentInParent<PaperController>().RegisterGrade();
+        return true;
     }
 }

@@ -4,20 +4,32 @@ public class GradingZone : MonoBehaviour
 {
     public GameObject inkDecalPrefab;
     public bool isCorrectBox;         // Check this in Inspector for the "Correct" box
-    private bool hasBeenStamped = false;
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("PencilTip") && !hasBeenStamped)
+        if (other.CompareTag("PencilTip"))
         {
-            hasBeenStamped = true;
-            Instantiate(inkDecalPrefab, transform.position + (transform.forward * -0.01f), transform.rotation, transform);
 
-            GetComponentInParent<QuestionController>().ReceivePlayerGrade(isCorrectBox);
+            if (GetComponentInParent<QuestionController>().ReceivePlayerGrade(isCorrectBox)){
+                GameObject decal = Instantiate(inkDecalPrefab, transform.parent);
 
-            if(GetComponent<AudioSource>()) GetComponent<AudioSource>().Play();
+                RectTransform rt = decal.GetComponent<RectTransform>();
 
-            Debug.Log("Question graded as: " + (isCorrectBox ? "Correct" : "Incorrect"));
+                rt.position = transform.position;
+
+                Vector3 localPos = rt.localPosition;
+                localPos.z = -0.5f; 
+                rt.localPosition = localPos;
+
+                rt.localRotation = Quaternion.identity;
+                rt.localScale = Vector3.one;
+
+
+                if(GetComponent<AudioSource>()) GetComponent<AudioSource>().Play();
+
+                Debug.Log("Question graded as: " + (isCorrectBox ? "Correct" : "Incorrect"));
+
+            }
         }
     }
 }
