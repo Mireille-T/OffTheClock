@@ -32,7 +32,7 @@ MonoBehaviour:
     - 12y
     - 7y^2
     - y
-  - questionText: Convert the binary number 101 to decimal.
+  - questionText: 'Convert the binary number 101 to decimal.'
     questionImage: {fileID: 0}
     correctAnswer: 5
     wrongAnswers:
@@ -40,3 +40,192 @@ MonoBehaviour:
     - 10
     - 101
     - 8
+  - questionText: 'Which data structure follows the LIFO (Last In, First Out) principle?'
+    questionImage: {fileID: 0}
+    correctAnswer: Stack
+    wrongAnswers:
+    - Queue
+    - Linked List
+    - Tree
+  - questionText: 'What is the time complexity of a binary search algorithm?'
+    questionImage: {fileID: 0}
+    correctAnswer: O(log n)
+    wrongAnswers:
+    - O(n)
+    - O(n^2)
+    - O(1)
+  - questionText: 'What is the decimal equivalent of the hexadecimal number F?'
+    questionImage: {fileID: 0}
+    correctAnswer: 15
+    wrongAnswers:
+    - 16
+    - 14
+    - 10
+  - questionText: 'Evaluate the indefinite integral of 2x dx.'
+    questionImage: {fileID: 0}
+    correctAnswer: x^2 + C
+    wrongAnswers:
+    - x^2
+    - 2
+    - 2x^2 + C
+  - questionText: 'What is the determinant of a 2x2 identity matrix?'
+    questionImage: {fileID: 0}
+    correctAnswer: 1
+    wrongAnswers:
+    - 0
+    - 2
+    - -1
+  - questionText: 'According to Newton''s Second Law, Force is equal to:'
+    questionImage: {fileID: 0}
+    correctAnswer: Mass * Acceleration
+    wrongAnswers:
+    - Mass * Velocity
+    - Work / Time
+    - Energy * Distance
+  - questionText: 'In Boolean algebra, what is the result of A OR (NOT A)?'
+    questionImage: {fileID: 0}
+    correctAnswer: 1 (True)
+    wrongAnswers:
+    - 0 (False)
+    - A
+    - NOT A
+  - questionText: 'What does the virtual keyword enable in C++?'
+    questionImage: {fileID: 0}
+    correctAnswer: Dynamic dispatch
+    wrongAnswers:
+    - Static typing
+    - Memory allocation
+    - Loop unrolling
+  - questionText: 'In Verilog, which operator is used for non-blocking assignments?'
+    questionImage: {fileID: 0}
+    correctAnswer: <=
+    wrongAnswers:
+    - =
+    - ==
+    - :=
+  - questionText: 'What Git command temporarily shelves changes without committing?'
+    questionImage: {fileID: 0}
+    correctAnswer: git stash
+    wrongAnswers:
+    - git push
+    - git branch
+    - git clone
+  - questionText: 'Which web framework relies on standard Python type hints for building APIs?'
+    questionImage: {fileID: 0}
+    correctAnswer: FastAPI
+    wrongAnswers:
+    - Django
+    - Flask
+    - React
+  - questionText: 'What is the standard network port used for SSH?'
+    questionImage: {fileID: 0}
+    correctAnswer: 22
+    wrongAnswers:
+    - 80
+    - 443
+    - 8080
+  - questionText: 'What dictates the timing in a UART communication protocol?'
+    questionImage: {fileID: 0}
+    correctAnswer: Agreed baud rate
+    wrongAnswers:
+    - Shared clock line
+    - Master-slave polling
+    - Interrupt requests
+  - questionText: 'During PC POST, what does a solid yellow/orange debug LED typically indicate?'
+    questionImage: {fileID: 0}
+    correctAnswer: DRAM training/issue
+    wrongAnswers:
+    - CPU not found
+    - VGA error
+    - Boot drive missing
+  - questionText: 'In the context of FPGAs, what does LUT stand for?'
+    questionImage: {fileID: 0}
+    correctAnswer: Look-Up Table
+    wrongAnswers:
+    - Logic Unit Terminal
+    - Localized Utility Thread
+    - Linear Update Transfer
+  - questionText: 'If two parallel magnetic coils both produce an upward flux, how do they interact?'
+    questionImage: {fileID: 0}
+    correctAnswer: They aid each other
+    wrongAnswers:
+    - They oppose each other
+    - They cancel out
+    - They create a short circuit
+  - questionText: 'What is the derivative of sin(x) with respect to x?'
+    questionImage: {fileID: 0}
+    correctAnswer: cos(x)
+    wrongAnswers:
+    - -cos(x)
+    - sin(x)
+    - -sin(x)
+  - questionText: 'In linear algebra, what are the eigenvalues of a diagonal matrix?'
+    questionImage: {fileID: 0}
+    correctAnswer: The diagonal entries
+    wrongAnswers:
+    - Always 1
+    - Always 0
+    - The determinant
+  - questionText: 'In multi-color 3D printing, what prevents colors from bleeding into each other?'
+    questionImage: {fileID: 0}
+    correctAnswer: Flushing volume
+    wrongAnswers:
+    - Retraction settings
+    - Bed leveling
+    - Cooling fans
+  - questionText: 'In a standard game of The Settlers of Catan, how many Victory Points are required to win?'
+    questionImage: {fileID: 0}
+    correctAnswer: 10
+    wrongAnswers:
+    - 8
+    - 12
+    - 15
+  - questionText: 'In a tactical shooter economy, how much does a premium primary rifle typically cost?'
+    questionImage: {fileID: 0}
+    correctAnswer: 2900 credits
+    wrongAnswers:
+    - 1500 credits
+    - 3300 credits
+    - 4500 credits
+  - questionText: 'Which of the following is the correct standard convention for passing flag arguments in a CLI?'
+    questionImage: {fileID: 0}
+    correctAnswer: --no-credit
+    wrongAnswers:
+    - --no_credit
+    - -nocredit
+    - /no-credit
+  - questionText: 'Which HTTP status code represents Not Found?'
+    questionImage: {fileID: 0}
+    correctAnswer: 404
+    wrongAnswers:
+    - 200
+    - 500
+    - 403
+  - questionText: 'In Unity, which built-in function is called exactly once per frame?'
+    questionImage: {fileID: 0}
+    correctAnswer: Update()
+    wrongAnswers:
+    - Start()
+    - Awake()
+    - FixedUpdate()
+  - questionText: 'What computing hardware architecture is specifically designed to mimic human neural networks?'
+    questionImage: {fileID: 0}
+    correctAnswer: Neuromorphic computing
+    wrongAnswers:
+    - Quantum computing
+    - RISC-V
+    - Superscalar architecture
+  - questionText: 'How many watts of energy conversion correspond to the specific CO2 benchmark?'
+    questionImage: {fileID: 0}
+    correctAnswer: 4161 watts
+    wrongAnswers:
+    - 2500 watts
+    - 3214 watts
+    - 5000 watts
+  - questionText: 'If a mirror setup yields an unadjusted coordinate, what is the exact corrected focal point distance?'
+    questionImage: {fileID: 0}
+    correctAnswer: 9.31927272727 cm
+    wrongAnswers:
+    - 9.31 cm
+    - 9.452 cm
+    - 10.0 cm
