@@ -26,7 +26,8 @@ namespace OffTheClock.Combat
         {
             if (currentHealth <= 0) return;
 
-            currentHealth = Mathf.Max(0, currentHealth - amount);
+            float divisor = PlayerStats.Instance != null ? PlayerStats.Instance.DefenseDivisor : 1f;
+            currentHealth = Mathf.Max(0, currentHealth - amount / divisor);
             onHealthChanged.Invoke(currentHealth);
 
             if (currentHealth <= 0)

@@ -294,7 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c4ee6625ac4669409e2ce6dec36144a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OffTheClock.Weapons.WeaponBase
-  weaponType: 0
+  weaponType: 1
   damage: 25
   fireRate: 1
 --- !u!114 &2304354681813698199

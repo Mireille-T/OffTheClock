@@ -30,7 +30,9 @@ namespace OffTheClock.Combat
 
         void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.layer != LayerMask.NameToLayer(PlayerLayer)) return;
+            // Accept any hit on the Player layer OR on the XR Rig root directly
+            if (other.gameObject.layer != LayerMask.NameToLayer(PlayerLayer) &&
+                other.GetComponentInParent<PlayerHealth>() == null) return;
 
             PlayerHealth.Instance?.TakeDamage(damage);
             Destroy(gameObject);

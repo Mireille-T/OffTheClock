@@ -12,28 +12,26 @@ namespace OffTheClock.Weapons
         public float minVelocityToHit = 0.5f;
 
         private WeaponBase _weapon;
-        private Vector3 _prevPosition;
-        private float _velocity;
+        private Rigidbody _rootRb;
 
         void Awake()
         {
             _weapon = GetComponentInParent<WeaponBase>();
+            _rootRb = GetComponentInParent<Rigidbody>();
             GetComponent<Collider>().isTrigger = true;
-        }
-
-        void Update()
-        {
-            _velocity = (transform.position - _prevPosition).magnitude / Time.deltaTime;
-            _prevPosition = transform.position;
         }
 
         void OnTriggerEnter(Collider other)
         {
-            if (_velocity < minVelocityToHit) return;
+            float speed = _rootRb != null ? _rootRb.linearVelocity.magnitude : 0f;
+            if (speed < minVelocityToHit) return;
 
             var enemyHealth = other.GetComponentInParent<EnemyHealth>();
-            if (enemyHealth != null)
-                enemyHealth.OnHit(_weapon != null ? _weapon.damage : 25f, _weapon);
+            if (enemyHealth == null) return;
+
+            float baseDmg = _weapon != null ? _weapon.damage : 25f;
+            float mult = PlayerStats.Instance != null ? PlayerStats.Instance.DamageMultiplier : 1f;
+            enemyHealth.OnHit(baseDmg * mult, _weapon);
         }
     }
 }

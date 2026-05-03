@@ -40,10 +40,14 @@ namespace OffTheClock.Weapons
         void OnGrabbed(SelectEnterEventArgs args)
         {
             SetBehaviorsActive(true);
+            if (_weapon.weaponType == WeaponType.Sword && _swordBehavior != null)
+                _swordBehavior.BeginGrab(args.interactorObject);
         }
 
         void OnReleased(SelectExitEventArgs args)
         {
+            if (_weapon.weaponType == WeaponType.Sword && _swordBehavior != null)
+                _swordBehavior.EndGrab();
             SetBehaviorsActive(false);
         }
 
