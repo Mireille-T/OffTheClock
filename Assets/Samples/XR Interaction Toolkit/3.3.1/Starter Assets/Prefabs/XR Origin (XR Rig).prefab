@@ -2081,6 +2081,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2761784063978902504, guid: c1800acf6366418a9b5f610249000331, type: 3}
+      propertyPath: m_Parameters.widthMultiplier
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2761784063978902504, guid: c1800acf6366418a9b5f610249000331, type: 3}
       propertyPath: m_Parameters.numCornerVertices
       value: 4
       objectReference: {fileID: 0}
@@ -2326,6 +2330,10 @@ PrefabInstance:
     - target: {fileID: 2761784063978902504, guid: c1800acf6366418a9b5f610249000331, type: 3}
       propertyPath: m_Parameters.numCapVertices
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2761784063978902504, guid: c1800acf6366418a9b5f610249000331, type: 3}
+      propertyPath: m_Parameters.widthMultiplier
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 2761784063978902504, guid: c1800acf6366418a9b5f610249000331, type: 3}
       propertyPath: m_Parameters.numCornerVertices
@@ -2766,6 +2774,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mecha Addons
       objectReference: {fileID: 0}
+    - target: {fileID: 7262914076686586039, guid: 8b65ffd477d226a4e8214ae91ac25fbb, type: 3}
+      propertyPath: classroomAddons
+      value: 
+      objectReference: {fileID: 7107814574869680439}
+    - target: {fileID: 7262914076686586039, guid: 8b65ffd477d226a4e8214ae91ac25fbb, type: 3}
+      propertyPath: teleportOffset.z
+      value: -0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 7949644116482939977, guid: 8b65ffd477d226a4e8214ae91ac25fbb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2814,6 +2830,11 @@ PrefabInstance:
 --- !u!4 &973911385301065977 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7949644116482939977, guid: 8b65ffd477d226a4e8214ae91ac25fbb, type: 3}
+  m_PrefabInstance: {fileID: 7194157403370781872}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8851604725521882626 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1802002334273757874, guid: 8b65ffd477d226a4e8214ae91ac25fbb, type: 3}
   m_PrefabInstance: {fileID: 7194157403370781872}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7400760887118150798
@@ -3069,6 +3090,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3010524074087838973, guid: 67d0ae7fb4980eb45964ed7036294bdc, type: 3}
+      propertyPath: mechaAddons
+      value: 
+      objectReference: {fileID: 8851604725521882626}
     - target: {fileID: 7949644116482939977, guid: 67d0ae7fb4980eb45964ed7036294bdc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.29544
@@ -3117,5 +3142,10 @@ PrefabInstance:
 --- !u!4 &1582794358971772876 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7949644116482939977, guid: 67d0ae7fb4980eb45964ed7036294bdc, type: 3}
+  m_PrefabInstance: {fileID: 8909800259156996997}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7107814574869680439 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1802002334273757874, guid: 67d0ae7fb4980eb45964ed7036294bdc, type: 3}
   m_PrefabInstance: {fileID: 8909800259156996997}
   m_PrefabAsset: {fileID: 0}
