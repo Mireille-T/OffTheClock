@@ -5,9 +5,12 @@ public class GameManager : MonoBehaviour
 {
     private const string GRADING_TEXT_PREFIX = "Correctly graded papers: ";
     private const string GRADING_TEXT_SEPARATOR = "/";
+    private const string ENEMY_TEXT_PREFIX = "Enemies defeated: ";
 
     [SerializeField] private TMP_Text classroomGradingText = null;
     [SerializeField] private TMP_Text mechaGradingText = null;
+    [SerializeField] private TMP_Text classroomEnemyText = null;
+    [SerializeField] private TMP_Text mechaEnemyText = null;
 
     private int numCorrectPapers = 0;
     public int NumCorrectPapers
@@ -29,6 +32,16 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private int numEnemiesDefeated = 0;
+    public int NumEnemiesDefeated
+    {
+        set
+        {
+            numEnemiesDefeated = value;
+            UpdateEnemyUI();
+        }
+    }
+
     private void Start()
     {
         UpdateGradingUI();
@@ -47,6 +60,21 @@ public class GameManager : MonoBehaviour
         if (mechaGradingText != null)
         {
             mechaGradingText.text = gradingText;
+        }
+    }
+
+    private void UpdateEnemyUI()
+    {
+        string enemyText = ENEMY_TEXT_PREFIX + numEnemiesDefeated;
+
+        if (classroomEnemyText != null)
+        {
+            classroomEnemyText.text = enemyText;
+        }
+
+        if (mechaEnemyText != null)
+        {
+            mechaEnemyText.text = enemyText;
         }
     }
 }
