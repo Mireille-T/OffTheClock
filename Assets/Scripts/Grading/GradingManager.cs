@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections.Generic;
 
 public class GradingManager : MonoBehaviour
 {
@@ -18,10 +17,17 @@ public class GradingManager : MonoBehaviour
     public int totalGraded = 0;
     public int correctCount = 0;
 
+    private GameManager gameManager = null;
+
     void Awake()
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+    }
+
+    private void Start()
+    {
+        gameManager = FindAnyObjectByType<GameManager>();
     }
 
     void Update()
@@ -42,10 +48,19 @@ public class GradingManager : MonoBehaviour
         if (!isShiftActive) return;
 
         totalGraded++;
+        if (gameManager != null)
+        {
+            gameManager.NumTotalPapers = totalGraded;
+        }
 
         if (isCorrect)
         {
             correctCount++;
+            if (gameManager != null)
+            {
+                gameManager.NumCorrectPapers = correctCount;
+            }
+
             currentStreak++;
             
             int pointsGained = scorePerCorrect + (currentStreak * 10);

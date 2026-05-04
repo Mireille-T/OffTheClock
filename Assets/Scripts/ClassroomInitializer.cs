@@ -8,6 +8,7 @@ public class ClassroomInitializer : MonoBehaviour
     [SerializeField] private GameObject mechaAddons = null;
     [SerializeField] private GameObject glasses = null;
     [SerializeField] private TeleportManager classroomTeleportManager = null;
+    [SerializeField] private AudioClip classroomAudio = null;
 
     private GameObject glassesInstance = null;
 
@@ -35,6 +36,11 @@ public class ClassroomInitializer : MonoBehaviour
         if (glassesInstance != null)
         {
             glassesInstance.SetActive(true);
+        }
+
+        if (Camera.main.TryGetComponent(out AudioSource audioSource) && classroomAudio != null)
+        {
+            audioSource.PlayOneShot(classroomAudio);
         }
     }
 

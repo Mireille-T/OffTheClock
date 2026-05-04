@@ -299,6 +299,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5841624468600846301, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: classroomGradingText
+      value: 
+      objectReference: {fileID: 2616326951930341561}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -361,6 +365,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ce43059b9feb914fa67bbc656a8fd0d, type: 3}
+--- !u!114 &2616326951930341561 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2876830400028803302, guid: 9ce43059b9feb914fa67bbc656a8fd0d, type: 3}
+  m_PrefabInstance: {fileID: 2616326951930341560}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
