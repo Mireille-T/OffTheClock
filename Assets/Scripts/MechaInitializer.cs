@@ -5,6 +5,7 @@ public class MechaInitializer : MonoBehaviour
 {
     [SerializeField] private UniversalRendererData rendererData;
     [SerializeField] private Transform classroomEnvironment = null;
+    [SerializeField] private Vector3 teleportOffset = Vector3.zero;
     [SerializeField] private GameObject classroomAddons = null;
     [SerializeField] private GameObject mechaCockpit = null;
 
@@ -19,7 +20,7 @@ public class MechaInitializer : MonoBehaviour
             teleportManager = cockpitInstance.GetComponentInChildren<TeleportManager>();
             if (teleportManager != null)
             {
-                teleportManager.PositionToTeleport = classroomEnvironment.position;
+                teleportManager.PositionToTeleport = classroomEnvironment.position + teleportOffset;
                 teleportManager.Initializer = this.gameObject;
             }
         }

@@ -7,6 +7,7 @@ public class ClassroomInitializer : MonoBehaviour
     [SerializeField] private Transform mechaEnvironment = null;
     [SerializeField] private GameObject mechaAddons = null;
     [SerializeField] private GameObject glasses = null;
+    [SerializeField] private TeleportManager classroomTeleportManager = null;
 
     private GameObject glassesInstance = null;
 
@@ -15,6 +16,12 @@ public class ClassroomInitializer : MonoBehaviour
         if (glasses != null)
         {
             glassesInstance = Instantiate(glasses, Camera.main.transform);
+        }
+
+        if (classroomTeleportManager != null)
+        {
+            classroomTeleportManager.PositionToTeleport = mechaEnvironment.position;
+            classroomTeleportManager.Initializer = this.gameObject;
         }
     }
 
