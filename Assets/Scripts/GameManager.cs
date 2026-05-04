@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
         set
         {
             numCorrectPapers = value;
+            UpdateGradingUI();
         }
     }
 
@@ -23,10 +24,16 @@ public class GameManager : MonoBehaviour
         set
         {
             numTotalPapers = value;
+            UpdateGradingUI();
         }
     }
 
-    private void Update()
+    private void Start()
+    {
+        UpdateGradingUI();
+    }
+
+    private void UpdateGradingUI()
     {
         if (classroomGradingText != null)
         {
