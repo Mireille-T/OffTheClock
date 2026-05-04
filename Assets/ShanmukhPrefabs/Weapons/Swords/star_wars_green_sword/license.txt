@@ -1,0 +1,11 @@
+Model Information:
+* title:	Star wars green sword
+* source:	https://sketchfab.com/3d-models/star-wars-green-sword-8c09a77a111f454bbcc7ae76fcd0aa50
+* author:	FobX_x (https://sketchfab.com/FobX_x)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Star wars green sword" (https://sketchfab.com/3d-models/star-wars-green-sword-8c09a77a111f454bbcc7ae76fcd0aa50) by FobX_x (https://sketchfab.com/FobX_x) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

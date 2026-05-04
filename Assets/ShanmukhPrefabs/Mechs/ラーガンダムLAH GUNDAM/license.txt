@@ -1,0 +1,11 @@
+Model Information:
+* title:	ラーガンダム/LAH GUNDAM
+* source:	https://sketchfab.com/3d-models/lah-gundam-bcdca96c1bf94f078fd528ce39b1fc00
+* author:	みそ太郎 (https://sketchfab.com/nama_140)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "ラーガンダム/LAH GUNDAM" (https://sketchfab.com/3d-models/lah-gundam-bcdca96c1bf94f078fd528ce39b1fc00) by みそ太郎 (https://sketchfab.com/nama_140) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

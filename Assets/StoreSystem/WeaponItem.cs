@@ -8,6 +8,9 @@ public class WeaponItem : ScriptableObject
     public string weaponName;
     public WeaponCategory weaponType;
 
+    [Tooltip("Name shown on each page: [0] base, [1] upgrade 1, [2] upgrade 2")]
+    public string[] tierNames = new string[3];
+
     [Tooltip("3 sprites: base color, upgrade 1 color, upgrade 2 color")]
     public Sprite[] tierSprites = new Sprite[3];
 
