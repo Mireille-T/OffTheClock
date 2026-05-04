@@ -33,14 +33,6 @@ public class GameManager : MonoBehaviour
     }
 
     private int numEnemiesDefeated = 0;
-    public int NumEnemiesDefeated
-    {
-        set
-        {
-            numEnemiesDefeated = value;
-            UpdateEnemyUI();
-        }
-    }
 
     private void Start()
     {
@@ -76,5 +68,11 @@ public class GameManager : MonoBehaviour
         {
             mechaEnemyText.text = enemyText;
         }
+    }
+
+    public void AddToNumEnemiesDefeated(int addValue = 1)
+    {
+        numEnemiesDefeated += addValue;
+        UpdateEnemyUI();
     }
 }
