@@ -33,7 +33,11 @@ namespace OffTheClock.Weapons
 
             var enemyHealth = other.GetComponentInParent<EnemyHealth>();
             if (enemyHealth != null)
-                enemyHealth.OnHit(_weapon != null ? _weapon.damage : 25f, _weapon);
+            {
+                float dmg = (_weapon != null ? _weapon.damage : 25f)
+                            * (OffTheClock.Combat.PlayerStats.Instance?.DamageMultiplier ?? 1f);
+                enemyHealth.OnHit(dmg, _weapon);
+            }
         }
     }
 }
