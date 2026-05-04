@@ -53,7 +53,7 @@ MonoBehaviour:
   - {fileID: 2618595831156876106, guid: 65a8afc82a1fa474b84247be328525b1, type: 3}
   - {fileID: 7531694843246254659, guid: bed54318ca7758d4986b109491ed0e08, type: 3}
   - {fileID: 2618595831156876106, guid: 65a8afc82a1fa474b84247be328525b1, type: 3}
-  playerTransform: {fileID: 0}
+  playerTransform: {fileID: 273464562011736494, guid: e6e117469caecc64ab6b72538e5e3645, type: 3}
   spawnRadius: 15
   spawnInterval: 4
   maxActiveEnemies: 8
