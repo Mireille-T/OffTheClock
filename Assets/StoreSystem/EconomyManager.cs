@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public enum StatType { Damage, Armor, Speed, FireRate }
 
@@ -10,12 +11,13 @@ public class EconomyManager : MonoBehaviour
     public static event Action<int> OnMoneyChanged;
 
     [SerializeField] private int startingMoney = 0;
+    [SerializeField] private float baseDamage = 20f;
     [SerializeField] private WeaponItem[] weaponItems;
 
     public int CurrentMoney { get; private set; }
 
-    // Mech stats (multipliers applied on top of base values)
-    public float Damage { get; private set; } = 1f;
+    // Mech stats — Damage is a flat number, others are multipliers
+    public float Damage { get; private set; } = 20f;
     public float Armor { get; private set; } = 1f;
     public float Speed { get; private set; } = 1f;
     public float FireRate { get; private set; } = 1f;
@@ -29,6 +31,14 @@ public class EconomyManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+
+        // Reset weapon tiers before loading so Editor values don't bleed in
+        if (weaponItems != null)
+            foreach (var w in weaponItems)
+                w.currentTier = 0;
+
+        // Apply startingMoney as default, then let Load overwrite if save exists
+        CurrentMoney = startingMoney;
         SaveSystem.Load(this, weaponItems);
     }
 
@@ -61,13 +71,13 @@ public class EconomyManager : MonoBehaviour
     }
 
     // Called by WeaponCardUI after a weapon upgrade is purchased.
-    // Sums all weapon damage boosts across both weapons and applies to Damage stat.
+    // Starts from baseDamage and adds flat damage boosts from all weapons.
     public void RefreshWeaponDamage()
     {
-        float total = 1f;
+        float total = baseDamage;
         if (weaponItems != null)
             foreach (var w in weaponItems)
-                total += w.TotalDamageBoost() / 100f;
+                total += w.TotalDamageBoost();
         ApplyUpgrade(StatType.Damage, total);
     }
 
@@ -79,7 +89,7 @@ public class EconomyManager : MonoBehaviour
     // Debug helper — remove before shipping
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G))
+        if (Keyboard.current != null && Keyboard.current.gKey.wasPressedThisFrame)
             AddMoney(50);
     }
 }
