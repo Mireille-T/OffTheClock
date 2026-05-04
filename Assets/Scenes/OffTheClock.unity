@@ -173,6 +173,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1039121721 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2876830400028803302, guid: 9ce43059b9feb914fa67bbc656a8fd0d, type: 3}
+  m_PrefabInstance: {fileID: 2616326951930341560}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1001 &1536128914
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -229,6 +240,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5841624468600846301, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: classroomGradingText
+      value: 
+      objectReference: {fileID: 1039121721}
     - target: {fileID: 5936447518726948728, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: mechaEnvironment
       value: 

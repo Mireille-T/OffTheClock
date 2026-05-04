@@ -23,7 +23,10 @@ public class GradingManager : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+    }
 
+    private void Start()
+    {
         gameManager = FindAnyObjectByType<GameManager>();
     }
 
