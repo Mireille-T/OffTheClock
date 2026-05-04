@@ -49,3 +49,4 @@ MonoBehaviour:
   teleportOffset: {x: -0.9, y: 0, z: 0}
   classroomAddons: {fileID: 0}
   mechaCockpit: {fileID: 6460234385823213209, guid: 5458dbd8a6c572546be8661e673a0585, type: 3}
+  mechaAudio: {fileID: 8300000, guid: 9b0e6b19c8c8a7843acc2f3b2387227b, type: 3}

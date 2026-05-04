@@ -48,3 +48,5 @@ MonoBehaviour:
   mechaEnvironment: {fileID: 0}
   mechaAddons: {fileID: 0}
   glasses: {fileID: 6322171442850680260, guid: e476e3447748c76408da360ca489c3a4, type: 3}
+  classroomTeleportManager: {fileID: 0}
+  classroomAudio: {fileID: 8300000, guid: fa90132ac8552034f96dcb79bb1f26ce, type: 3}

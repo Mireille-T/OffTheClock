@@ -8,6 +8,7 @@ public class MechaInitializer : MonoBehaviour
     [SerializeField] private Vector3 teleportOffset = Vector3.zero;
     [SerializeField] private GameObject classroomAddons = null;
     [SerializeField] private GameObject mechaCockpit = null;
+    [SerializeField] private AudioClip mechaAudio = null;
 
     private TeleportManager teleportManager = null;
     private GameObject cockpitInstance = null;
@@ -36,6 +37,11 @@ public class MechaInitializer : MonoBehaviour
         if (cockpitInstance != null)
         {
             cockpitInstance.SetActive(true);
+        }
+
+        if (Camera.main.TryGetComponent(out AudioSource audioSource) && mechaAudio != null)
+        {
+            audioSource.PlayOneShot(mechaAudio);
         }
     }
 
