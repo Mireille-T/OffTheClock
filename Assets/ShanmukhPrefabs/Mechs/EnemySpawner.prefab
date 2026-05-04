@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &611797524963202296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8525366455935887386}
+  - component: {fileID: 3952921946453449062}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8525366455935887386
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611797524963202296}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.23359, y: -3.81197, z: 0.67745}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3952921946453449062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611797524963202296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8520c3b77af039c4bba2bb548b09c974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OffTheClock.Combat.EnemySpawner
+  enemyPrefabs:
+  - {fileID: 3266118953685286206, guid: 71d06c54590a40f47bc9f41a1be50dca, type: 3}
+  - {fileID: 2618595831156876106, guid: 65a8afc82a1fa474b84247be328525b1, type: 3}
+  - {fileID: 7531694843246254659, guid: bed54318ca7758d4986b109491ed0e08, type: 3}
+  - {fileID: 2618595831156876106, guid: 65a8afc82a1fa474b84247be328525b1, type: 3}
+  - {fileID: 7531694843246254659, guid: bed54318ca7758d4986b109491ed0e08, type: 3}
+  - {fileID: 2618595831156876106, guid: 65a8afc82a1fa474b84247be328525b1, type: 3}
+  - {fileID: 7531694843246254659, guid: bed54318ca7758d4986b109491ed0e08, type: 3}
+  - {fileID: 2618595831156876106, guid: 65a8afc82a1fa474b84247be328525b1, type: 3}
+  playerTransform: {fileID: 273464562011736494, guid: e6e117469caecc64ab6b72538e5e3645, type: 3}
+  spawnRadius: 15
+  spawnInterval: 4
+  maxActiveEnemies: 8
+  strDelta: 1
+  spdDelta: 1
+  defDelta: 1
+  spawnIntervalMultiplier: 1
+  onKillCountChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  onWaveCleared:
+    m_PersistentCalls:
+      m_Calls: []

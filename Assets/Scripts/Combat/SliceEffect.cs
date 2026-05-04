@@ -1,11 +1,10 @@
 using UnityEngine;
-using OffTheClock.Weapons;
 
 namespace OffTheClock.Combat
 {
     // Attach to enemy prefab root alongside EnemyHealth.
     // Enemy prefab hierarchy must have two children named "EnemyTop" and "EnemyBottom".
-    // On sword hit, detaches both halves with rigidbodies so they fly apart.
+    // On death, detaches both halves with rigidbodies so they fly apart.
     [RequireComponent(typeof(EnemyHealth))]
     public class SliceEffect : MonoBehaviour
     {
@@ -21,11 +20,14 @@ namespace OffTheClock.Combat
 
         void Awake()
         {
+            if (topHalf == null)    topHalf    = transform.Find("EnemyTop")?.gameObject;
+            if (bottomHalf == null) bottomHalf = transform.Find("EnemyBottom")?.gameObject;
+
             var health = GetComponent<EnemyHealth>();
-            health.onHitBySword.AddListener(OnSwordHit);
+            health.onDeath.AddListener(OnDied);
         }
 
-        void OnSwordHit(WeaponBase weapon)
+        void OnDied()
         {
             if (_sliced) return;
             _sliced = true;

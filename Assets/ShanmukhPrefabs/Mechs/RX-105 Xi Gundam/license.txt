@@ -1,0 +1,11 @@
+Model Information:
+* title:	RX-105 Xi Gundam
+* source:	https://sketchfab.com/3d-models/rx-105-xi-gundam-84ebc5ac5c8248a1b86a72ffd12b84d6
+* author:	Mr.Kimono (https://sketchfab.com/Mr.Kimono)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "RX-105 Xi Gundam" (https://sketchfab.com/3d-models/rx-105-xi-gundam-84ebc5ac5c8248a1b86a72ffd12b84d6) by Mr.Kimono (https://sketchfab.com/Mr.Kimono) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
