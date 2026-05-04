@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     private const string GRADING_TEXT_SEPARATOR = "/";
 
     [SerializeField] private TMP_Text classroomGradingText = null;
+    [SerializeField] private TMP_Text mechaGradingText = null;
 
     private int numCorrectPapers = 0;
     public int NumCorrectPapers
@@ -35,10 +36,17 @@ public class GameManager : MonoBehaviour
 
     private void UpdateGradingUI()
     {
+        string gradingText = GRADING_TEXT_PREFIX + numCorrectPapers.ToString()
+                + GRADING_TEXT_SEPARATOR + numTotalPapers.ToString();
+
         if (classroomGradingText != null)
         {
-            classroomGradingText.text = GRADING_TEXT_PREFIX + numCorrectPapers.ToString()
-                + GRADING_TEXT_SEPARATOR + numTotalPapers.ToString();
+            classroomGradingText.text = gradingText;
+        }
+
+        if (mechaGradingText != null)
+        {
+            mechaGradingText.text = gradingText;
         }
     }
 }

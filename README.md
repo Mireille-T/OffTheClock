@@ -11,6 +11,9 @@ By: Talha Coskun (tcoskun2), Mireille Tan (mt48), Shanmukh Upadhyayula (supad83)
   - Fuzzy Bubbles (Designed by Robert Leuschke)
     - Copyright 2005 The Fuzzy Bubbles Project Authors (https://github.com/googlefonts/fuzzy-bubbles)
     - Licensed under the SIL Open Font License, Version 1.1
+  - Google Sans Code (Designed by Google, Universal Thirst)
+    - Copyright 2025 The Google Sans Code Project Authors (github.com/googlefonts/googlesans-code)
+    - Licensed under the SIL Open Font License, Version 1.1 
 - SketchFab
   - ["Ceiling Light"](https://skfb.ly/6WXO9) by Heliona is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
   - ["Interior Wood Doors Pack 1"](https://skfb.ly/oC7EL) by Toni García Vilche is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).

@@ -10,6 +10,7 @@ public class MechaInitializer : MonoBehaviour
     [SerializeField] private GameObject mechaCockpit = null;
     [SerializeField] private AudioClip mechaAudio = null;
 
+    private GameObject uiCanvas = null;
     private TeleportManager teleportManager = null;
     private GameObject cockpitInstance = null;
 
@@ -24,6 +25,13 @@ public class MechaInitializer : MonoBehaviour
                 teleportManager.PositionToTeleport = classroomEnvironment.position + teleportOffset;
                 teleportManager.Initializer = this.gameObject;
             }
+        }
+
+        Canvas canvas = this.GetComponentInChildren<Canvas>();
+        if (canvas != null)
+        {
+            uiCanvas = canvas.transform.parent.gameObject;
+            uiCanvas.transform.SetParent(Camera.main.transform.parent);
         }
     }
 
@@ -43,6 +51,17 @@ public class MechaInitializer : MonoBehaviour
         {
             audioSource.PlayOneShot(mechaAudio);
         }
+
+        if (uiCanvas != null)
+        {
+            uiCanvas.gameObject.SetActive(true);
+        }
+
+        Animation revealAnimation = this.GetComponentInChildren<Animation>();
+        if (revealAnimation != null)
+        {
+            revealAnimation.Play();
+        }
     }
 
     private void OnDisable()
@@ -50,6 +69,11 @@ public class MechaInitializer : MonoBehaviour
         if (cockpitInstance != null)
         {
             cockpitInstance.SetActive(false);
+        }
+
+        if (uiCanvas != null)
+        {
+            uiCanvas.gameObject.SetActive(false);
         }
 
         if (classroomAddons != null)
