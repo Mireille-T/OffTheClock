@@ -2771,10 +2771,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7107814574869680439}
     - target: {fileID: 7262914076686586039, guid: 8b65ffd477d226a4e8214ae91ac25fbb, type: 3}
-      propertyPath: teleportOffset.x
-      value: -2.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7262914076686586039, guid: 8b65ffd477d226a4e8214ae91ac25fbb, type: 3}
       propertyPath: teleportOffset.z
       value: -0.8
       objectReference: {fileID: 0}
