@@ -17219,7 +17219,9 @@ PrefabInstance:
       value: TeleportButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5804726431117727629, guid: 853b413069dec3c4fa36d90128816866, type: 3}
+    - {fileID: 4336883255883212904, guid: 853b413069dec3c4fa36d90128816866, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853b413069dec3c4fa36d90128816866, type: 3}
