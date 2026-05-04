@@ -22,3 +22,4 @@ By: Talha Coskun (tcoskun2), Mireille Tan (mt48), Shanmukh Upadhyayula (supad83)
   - ["Office Table"](https://skfb.ly/6WoRI) by Konstantin Koretskyi is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
   - ["Sci-Fi Platform / Teleporter Pad–Unity & Unreal"](https://skfb.ly/pEtsr) by DevPoly3D is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
   - ["Reading Glasses"](https://skfb.ly/o6Q8x) by assetfactory is licensed under [Free Standard](https://sketchfab.com/licenses).
+  - ["Whiteboard"](https://skfb.ly/puvAF) by Darren McNerney 3D is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
