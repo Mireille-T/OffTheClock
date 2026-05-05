@@ -42,10 +42,20 @@ public class ClassroomInitializer : MonoBehaviour
         {
             audioSource.PlayOneShot(classroomAudio);
         }
+
+        if (GradingManager.Instance != null)
+        {
+            GradingManager.Instance.StartSession();
+        }
     }
 
     private void OnDisable()
     {
+        if (GradingManager.Instance != null)
+        {
+            GradingManager.Instance.EndSession();
+        }
+
         if (glassesInstance != null)
         {
             glassesInstance.SetActive(false);
