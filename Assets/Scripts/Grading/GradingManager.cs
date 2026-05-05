@@ -8,6 +8,7 @@ public class GradingManager : MonoBehaviour
     public int currentScore = 0;
     public int currentStreak = 0;
     public int scorePerCorrect = 100;
+    public int streakbonus = 8;
 
     [Header("Session Statistics")]
     public int sessionTotalGraded = 0;
@@ -103,7 +104,8 @@ public class GradingManager : MonoBehaviour
             if (gameManager != null) gameManager.NumCorrectPapers = correctCount;
 
             currentStreak++;
-            int pointsGained = scorePerCorrect + (currentStreak * 10);
+            int pointsGained = scorePerCorrect + (currentStreak * streakbonus);
+            EconomyManager.Instance.AddMoney(pointsGained);
             currentScore += pointsGained;
             
             Debug.Log($"Correct! Streak: {currentStreak} | Points: +{pointsGained}");
