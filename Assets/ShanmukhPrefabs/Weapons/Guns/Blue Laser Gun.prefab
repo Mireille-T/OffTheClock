@@ -41,19 +41,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -6689036041284674117, guid: 0f98120f6f877d943809da675b44277e, type: 3}
       propertyPath: m_Name
-      value: Blue Laser Gun 1
+      value: Blue Laser Gun
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: 0f98120f6f877d943809da675b44277e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.3023798
+      value: 1.223742
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: 0f98120f6f877d943809da675b44277e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.3023798
+      value: 1.223742
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: 0f98120f6f877d943809da675b44277e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.3023798
+      value: 1.223742
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: 0f98120f6f877d943809da675b44277e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -166,7 +166,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable
   m_InteractionManager: {fileID: 0}
-  m_Colliders: []
+  m_Colliders:
+  - {fileID: 6846690938882609121}
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
@@ -227,7 +228,7 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 180195514792567859, guid: 1d21715d509b9eb4c8904d040823635b, type: 3}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -294,7 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c4ee6625ac4669409e2ce6dec36144a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OffTheClock.Weapons.WeaponBase
-  weaponType: 0
+  weaponType: 1
   damage: 25
   fireRate: 1
 --- !u!114 &8653731360119133104
@@ -321,7 +322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa5c02d7fb062e468744fb421c62dff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OffTheClock.Weapons.GunBehavior
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 8679873371126876789, guid: 99ea8cae930aa7b4a9d4865eff31de57, type: 3}
   muzzlePoint: {fileID: 2122202564107503093}
   triggerAction: {fileID: -5476991422441627773, guid: 052faaac586de48259a63d0c4782560b, type: 3}
 --- !u!65 &6846690938882609121
