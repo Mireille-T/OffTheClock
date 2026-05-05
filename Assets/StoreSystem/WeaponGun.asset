@@ -23,7 +23,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 360f90951e95d4c88ab2b281fd43dd48, type: 3}
   - {fileID: 21300000, guid: e0de7b7a3ab944e79b783b7efedffb58, type: 3}
   damageIncreases:
-  - 25
-  - 75
-  tierCosts: 46000000b4000000
+  - 30
+  - 100
+  tierCosts: 90010000e8030000
   currentTier: 0

@@ -19,11 +19,11 @@ MonoBehaviour:
   - OrangeSword
   - BlueSword
   tierSprites:
-  - {fileID: 21300000, guid: 72f14f70d16fa4c66acfeeb8c7b5b65c, type: 3}
+  - {fileID: 21300000, guid: 47ec731c82ab342718460996a47e19cd, type: 3}
   - {fileID: 21300000, guid: 97701d5a7c3d44ccd919e5ceabd1620a, type: 3}
   - {fileID: 21300000, guid: 781c2c8c553664fbb8e29ec4d28e5b24, type: 3}
   damageIncreases:
   - 20
   - 60
-  tierCosts: 3200000096000000
+  tierCosts: 2c010000bc020000
   currentTier: 0
