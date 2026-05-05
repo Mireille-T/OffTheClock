@@ -38,7 +38,7 @@ public class CockpitHUD : MonoBehaviour
     {
         var e = EconomyManager.Instance;
         if (e == null) return;
-        if (damageText   != null) damageText.text   = $"DMG {e.Damage:0.##}x";
+        if (damageText   != null) damageText.text   = $"DMG {e.Damage:0}";
         if (armorText    != null) armorText.text    = $"ARM {e.Armor:0.##}x";
         if (speedText    != null) speedText.text    = $"SPD {e.Speed:0.##}x";
         if (fireRateText != null) fireRateText.text = $"RATE {e.FireRate:0.##}x";

@@ -58,7 +58,7 @@ public class WeaponCardUI : MonoBehaviour
                 weaponImage.sprite = _weapon.tierSprites[_pageTier];
         }
 
-        weaponNameText.text = locked ? "???" : _weapon.weaponName;
+        weaponNameText.text = locked ? "???" : _weapon.tierNames[_pageTier];
         tierStarsText.text  = locked ? "???" : BuildStars(_pageTier, 2);
 
         ownedPanel.SetActive(owned);
@@ -68,8 +68,8 @@ public class WeaponCardUI : MonoBehaviour
         if (buyable)
         {
             int upgradeIndex = _pageTier - 1; // tier1 = index0, tier2 = index1
-            damageIncreaseText.text = $"+{_weapon.damageIncreases[upgradeIndex]} more DMG";
-            costText.text = $"${_weapon.tierCosts[upgradeIndex]}";
+            damageIncreaseText.text = $"Damage: +{_weapon.damageIncreases[upgradeIndex]}";
+            costText.text = $"Cost: ${_weapon.tierCosts[upgradeIndex]}";
 
             bool canAfford = currentMoney >= _weapon.tierCosts[upgradeIndex];
             buyBtnLabel.text = "BUY";

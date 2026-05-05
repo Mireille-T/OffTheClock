@@ -14,12 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WeaponItem
   weaponName: Gun
   weaponType: 1
+  tierNames:
+  - GreenGun
+  - OrangeGun
+  - BlueGun
   tierSprites:
   - {fileID: 21300000, guid: bec3ac482d92c4d36a7d9eac9b5f1836, type: 3}
-  - {fileID: 21300000, guid: e0de7b7a3ab944e79b783b7efedffb58, type: 3}
   - {fileID: 21300000, guid: 360f90951e95d4c88ab2b281fd43dd48, type: 3}
+  - {fileID: 21300000, guid: e0de7b7a3ab944e79b783b7efedffb58, type: 3}
   damageIncreases:
   - 25
-  - 50
+  - 75
   tierCosts: 46000000b4000000
   currentTier: 0

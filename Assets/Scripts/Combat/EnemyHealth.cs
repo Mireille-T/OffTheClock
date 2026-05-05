@@ -35,6 +35,12 @@ namespace OffTheClock.Combat
 
         void Die()
         {
+            GameManager gameManager = FindAnyObjectByType<GameManager>();
+            if (gameManager != null)
+            {
+                gameManager.AddToNumEnemiesDefeated();
+            }
+
             onDeath.Invoke();
 
             if (deathEffect != null)
