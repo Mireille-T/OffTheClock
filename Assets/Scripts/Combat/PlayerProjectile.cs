@@ -17,6 +17,12 @@ namespace OffTheClock.Combat
         public Color visualColor = new Color(0.3f, 0.9f, 1f);
         public Vector3 visualScale = new Vector3(0.12f, 0.12f, 0.8f);
 
+        [Header("Hit FX")]
+        public GameObject hitEffect;
+        public float hitEffectLifetime = 2f;
+        public AudioClip hitSound;
+        [Range(0f, 1f)] public float hitSoundVolume = 1f;
+
         void Awake()
         {
             GetComponent<Collider>().isTrigger = true;
@@ -26,7 +32,26 @@ namespace OffTheClock.Combat
 
         void Update()
         {
-            transform.position += transform.forward * speed * Time.deltaTime;
+            float step = speed * Time.deltaTime;
+            if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, step, ~0, QueryTriggerInteraction.Collide))
+            {
+                Debug.Log($"[PlayerProjectile] Ray hit {hit.collider.name}");
+                var enemy = hit.collider.GetComponentInParent<EnemyHealth>();
+                if (enemy != null)
+                {
+                    enemy.OnHit(damage * (PlayerStats.Instance?.DamageMultiplier ?? 1f));
+                    if (hitEffect != null)
+                    {
+                        var fx = Instantiate(hitEffect, hit.point, Quaternion.identity);
+                        if (hitEffectLifetime > 0f) Destroy(fx, hitEffectLifetime);
+                    }
+                    if (hitSound != null)
+                        AudioSource.PlayClipAtPoint(hitSound, hit.point, hitSoundVolume);
+                    Destroy(gameObject);
+                    return;
+                }
+            }
+            transform.position += transform.forward * step;
         }
 
         void OnTriggerEnter(Collider other)
@@ -35,6 +60,16 @@ namespace OffTheClock.Combat
             if (enemy == null) return;
 
             enemy.OnHit(damage * (PlayerStats.Instance?.DamageMultiplier ?? 1f));
+
+            Vector3 hitPos = other.ClosestPoint(transform.position);
+            if (hitEffect != null)
+            {
+                var fx = Instantiate(hitEffect, hitPos, Quaternion.identity);
+                if (hitEffectLifetime > 0f) Destroy(fx, hitEffectLifetime);
+            }
+            if (hitSound != null)
+                AudioSource.PlayClipAtPoint(hitSound, hitPos, hitSoundVolume);
+
             Destroy(gameObject);
         }
 

@@ -10,7 +10,6 @@ namespace OffTheClock.UI
     public class PlayerStatsUI : MonoBehaviour
     {
         public TMP_Text strText;
-        public TMP_Text defText;
         public TMP_Text spdText;
         public TMP_Text levelText;
 
@@ -26,10 +25,9 @@ namespace OffTheClock.UI
         {
             if (PlayerStats.Instance == null) return;
             var s = PlayerStats.Instance;
-            if (strText   != null) strText.text   = $"STR  {s.strength}";
-            if (defText   != null) defText.text   = $"DEF  {s.defense}";
-            if (spdText   != null) spdText.text   = $"SPD  {s.speed}";
-            if (levelText != null) levelText.text = $"LVL  {s.level}";
+            if (strText   != null) strText.text   = $"STR: {s.strength}";
+            if (spdText   != null) spdText.text   = $"SPD: {s.speed}";
+            if (levelText != null) levelText.text = $"LVL:  {s.level}";
         }
     }
 }

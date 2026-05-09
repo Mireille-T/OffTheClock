@@ -14,7 +14,6 @@ namespace OffTheClock.Combat
         [Header("Stats")]
         public int strength = 1;
         public int speed = 1;
-        public int defense = 1;
         public int hp = 1;
         public int level = 1;
 
@@ -23,8 +22,6 @@ namespace OffTheClock.Combat
         public float strengthScale = 0.25f;
         [Tooltip("Speed multiplier = 1 + speedScale * (speed - 1)")]
         public float speedScale = 0.15f;
-        [Tooltip("Defense divisor = 1 + defenseScale * (defense - 1)")]
-        public float defenseScale = 0.20f;
         [Tooltip("Max health added per HP stat point above 1")]
         public float hpScale = 20f;
 
@@ -33,9 +30,9 @@ namespace OffTheClock.Combat
 
         public float DamageMultiplier => 1f + strengthScale * (strength - 1);
         public float SpeedMultiplier  => 1f + speedScale    * (speed - 1);
-        public float DefenseDivisor   => 1f + defenseScale  * (defense - 1);
 
         private ContinuousMoveProvider _moveProvider;
+        private float _baseMoveSpeed;
 
         void Awake()
         {
@@ -46,15 +43,15 @@ namespace OffTheClock.Combat
         void Start()
         {
             _moveProvider = FindObjectOfType<ContinuousMoveProvider>();
+            if (_moveProvider != null) _baseMoveSpeed = _moveProvider.moveSpeed;
             ApplySpeed();
         }
 
-        public void LevelUp(int strDelta, int spdDelta, int defDelta, int hpDelta = 1)
+        public void LevelUp(int strDelta, int spdDelta, int hpDelta = 1)
         {
             level++;
             strength += strDelta;
             speed += spdDelta;
-            defense += defDelta;
             hp += hpDelta;
             ApplySpeed();
             ApplyHp(hpDelta);
@@ -74,7 +71,7 @@ namespace OffTheClock.Combat
         void ApplySpeed()
         {
             if (_moveProvider != null)
-                _moveProvider.moveSpeed = SpeedMultiplier;
+                _moveProvider.moveSpeed = _baseMoveSpeed * SpeedMultiplier;
         }
     }
 }

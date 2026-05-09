@@ -10,12 +10,13 @@ namespace OffTheClock.Combat
     public class EnemyAI : MonoBehaviour
     {
         public float moveSpeed = 3f;
-        public float stopDistance = 2f;    // how close to get before standing still (avoid clipping into player)
+        public float stopDistance = 5f;    // how close to get before standing still (avoid clipping into player)
         public float fireInterval = 2.5f;
         public float repathInterval = 0.5f;
         public float waypointReachDistance = 0.4f;
         public GameObject projectilePrefab;
         public Transform firePoint;        // assign a child Transform as muzzle point
+        [HideInInspector] public float damageMultiplier = 1f;
 
         private Transform _player;
         private bool _isDead;
@@ -84,7 +85,13 @@ namespace OffTheClock.Combat
 
             Transform origin = firePoint != null ? firePoint : transform;
             Vector3 dir = (_player.position - origin.position).normalized;
-            Instantiate(projectilePrefab, origin.position, Quaternion.LookRotation(dir));
+            var bullet = Instantiate(projectilePrefab, origin.position, Quaternion.LookRotation(dir));
+            var ep = bullet.GetComponent<EnemyProjectile>();
+            if (ep != null)
+            {
+                ep.SetOwnerCollider(GetComponent<Collider>());
+                ep.damage *= damageMultiplier;
+            }
         }
     }
 }

@@ -55,13 +55,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3983114788839501273}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 1.099, y: 1.791, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2802807377163134391}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &9088784052552624011
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,6 +207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LahGundamEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8128668236925612103, guid: 31c2cc97c8835bb45b6c0500ed4d9e10, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8897093224900880590, guid: 31c2cc97c8835bb45b6c0500ed4d9e10, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -221,15 +225,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8897093224900880590, guid: 31c2cc97c8835bb45b6c0500ed4d9e10, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.69435
+      value: 6.81
       objectReference: {fileID: 0}
     - target: {fileID: 8897093224900880590, guid: 31c2cc97c8835bb45b6c0500ed4d9e10, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.78891
+      value: -1.73
       objectReference: {fileID: 0}
     - target: {fileID: 8897093224900880590, guid: 31c2cc97c8835bb45b6c0500ed4d9e10, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.45199
+      value: -1.98
       objectReference: {fileID: 0}
     - target: {fileID: 8897093224900880590, guid: 31c2cc97c8835bb45b6c0500ed4d9e10, type: 3}
       propertyPath: m_LocalRotation.w
@@ -317,7 +321,7 @@ Rigidbody:
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -327,7 +331,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!136 &1774725068198806154
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -347,10 +351,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2.9388332
+  m_Radius: 2.3408427
+  m_Height: 5.7959905
   m_Direction: 1
-  m_Center: {x: 0, y: 0.8281543, z: 0}
+  m_Center: {x: 0.24952793, y: 0.8281543, z: 0.55715233}
 --- !u!114 &5401710852930226194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,13 +388,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c7ce481ae365e84c97ec3fa23cf7b57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OffTheClock.Combat.EnemyAI
-  moveSpeed: 1
-  stopDistance: 2
-  fireInterval: 2.5
+  moveSpeed: 3
+  stopDistance: 5
+  fireInterval: 5
   repathInterval: 0.5
   waypointReachDistance: 0.4
   projectilePrefab: {fileID: 4544365373786356658, guid: 2e947f1eaef723443a334312241fd7f0, type: 3}
   firePoint: {fileID: 6266047386854704058}
+  damageMultiplier: 1
 --- !u!114 &-887779863568653581
 MonoBehaviour:
   m_ObjectHideFlags: 0

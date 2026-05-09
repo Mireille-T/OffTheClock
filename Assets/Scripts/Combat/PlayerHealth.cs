@@ -12,6 +12,11 @@ namespace OffTheClock.Combat
         public float maxHealth = 100f;
         public float currentHealth;
 
+        [Tooltip("Seconds of invincibility after taking damage. Prevents stacked hits from physics catch-up bursts.")]
+        public float invincibilityDuration = 0.5f;
+
+        private float _lastHitTime = -999f;
+
         public UnityEvent onDeath;
         public UnityEvent<float> onHealthChanged; // passes new health value
 
@@ -25,9 +30,16 @@ namespace OffTheClock.Combat
         public void TakeDamage(float amount)
         {
             if (currentHealth <= 0) return;
+            if (Time.time - _lastHitTime < invincibilityDuration)
+            {
+                Debug.Log($"[PlayerHealth] BLOCKED dmg={amount} (i-frames active)");
+                return;
+            }
+            _lastHitTime = Time.time;
 
-            amount /= PlayerStats.Instance?.DefenseDivisor ?? 1f;
+            float prev = currentHealth;
             currentHealth = Mathf.Max(0, currentHealth - amount);
+            Debug.Log($"[PlayerHealth] HIT t={Time.time:F3} dmg={amount} {prev}→{currentHealth} stack:\n{System.Environment.StackTrace}");
             onHealthChanged.Invoke(currentHealth);
 
             if (currentHealth <= 0)

@@ -13,6 +13,10 @@ namespace OffTheClock.Weapons
         public Transform muzzlePoint;    // child Transform marking barrel tip
         public InputActionReference triggerAction; // bind to XRI RightHand Activate or LeftHand Activate
 
+        [Tooltip("Sound played each time the gun fires.")]
+        public AudioClip fireSound;
+        [Range(0f, 1f)] public float fireSoundVolume = 1f;
+
         private WeaponBase _weapon;
         private float _nextFireTime;
 
@@ -43,6 +47,9 @@ namespace OffTheClock.Weapons
 
             Transform origin = muzzlePoint != null ? muzzlePoint : transform;
             Instantiate(projectilePrefab, origin.position, origin.rotation);
+
+            if (fireSound != null)
+                AudioSource.PlayClipAtPoint(fireSound, origin.position, fireSoundVolume);
         }
     }
 }

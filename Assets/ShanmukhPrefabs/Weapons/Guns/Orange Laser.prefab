@@ -76,6 +76,18 @@ PrefabInstance:
       propertyPath: m_doNotOverwriteTemplateMaterialProperties
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1789699111024830065, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_Height
+      value: 75.93589
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789699111024830065, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_Radius
+      value: 13.50338
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789699111024830065, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -101,9 +113,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ce953e50726af459c50a7feb45fc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OffTheClock.Combat.PlayerProjectile
-  damage: 20
-  speed: 5
+  damage: 30
+  speed: 7
   lifetime: 5
   ensureVisible: 1
   visualColor: {r: 1, g: 0.42334053, b: 0.18867922, a: 1}
   visualScale: {x: 0.12, y: 0.12, z: 0.8}
+  hitEffect: {fileID: 36940242783460977, guid: afbc77fbe9365214fb61fb6c2f4e37da, type: 3}
+  hitEffectLifetime: 2
+  hitSound: {fileID: 8300000, guid: 380a61624a607f042ab5e96218f37633, type: 3}
+  hitSoundVolume: 1

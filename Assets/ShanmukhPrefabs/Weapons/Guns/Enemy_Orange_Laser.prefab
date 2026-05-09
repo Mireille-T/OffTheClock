@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Orange_Laser
       objectReference: {fileID: 0}
+    - target: {fileID: 136330, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 499656, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.01104272
@@ -90,15 +94,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1789699111024830065, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
       propertyPath: m_Height
-      value: 1.5
+      value: 59.575966
       objectReference: {fileID: 0}
     - target: {fileID: 1789699111024830065, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
       propertyPath: m_Radius
-      value: 0.05
+      value: 5.8545203
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789699111024830065, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_Center.x
+      value: -0.37895223
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789699111024830065, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_Center.y
+      value: 1.3191398
       objectReference: {fileID: 0}
     - target: {fileID: 1789699111024830065, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
       propertyPath: m_Center.z
-      value: 0
+      value: 25.57076
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789699111024830065, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_Direction
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -128,8 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38b36f4d051d6c44bbaa31744f20fa99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OffTheClock.Combat.EnemyProjectile
-  speed: 1
-  damage: 10
+  speed: 3
+  damage: 25
   lifetime: 6
   ensureVisible: 1
   visualColor: {r: 1, g: 0.3, b: 0.2, a: 1}
@@ -160,4 +176,4 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1

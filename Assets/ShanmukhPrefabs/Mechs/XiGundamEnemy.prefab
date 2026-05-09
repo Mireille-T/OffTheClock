@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 5652168115301311483}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0496, y: -0.09349, z: 0.04658}
+  m_LocalPosition: {x: -0.0012, y: 0.0865, z: 0.0002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -188,6 +188,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XiGundamEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: -6689036041284674117, guid: d034684aa05158b44a398484943c666d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: d034684aa05158b44a398484943c666d, type: 3}
       propertyPath: m_LocalScale.x
       value: 43
@@ -281,6 +285,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 8647126327120668905}
   m_SourcePrefab: {fileID: -5645937942226959685, guid: d034684aa05158b44a398484943c666d, type: 3}
+--- !u!1 &1370614221629800367 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2834074816469583785, guid: d034684aa05158b44a398484943c666d, type: 3}
+  m_PrefabInstance: {fileID: 5453350793147353080}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7531694843246254659 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6689036041284674117, guid: d034684aa05158b44a398484943c666d, type: 3}
@@ -312,7 +321,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!136 &4855898819638187837
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -332,10 +341,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.033035394
-  m_Height: 0.12416488
+  m_Radius: 0.084397115
+  m_Height: 0.16879423
   m_Direction: 1
-  m_Center: {x: 0.0005493996, y: 0.04936454, z: 0.032943293}
+  m_Center: {x: -0.0015244705, y: 0.049364533, z: 0.003011637}
 --- !u!114 &8458199663290931066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,13 +378,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c7ce481ae365e84c97ec3fa23cf7b57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OffTheClock.Combat.EnemyAI
-  moveSpeed: 1
-  stopDistance: 2
-  fireInterval: 2.5
+  moveSpeed: 3
+  stopDistance: 5
+  fireInterval: 4
   repathInterval: 0.5
   waypointReachDistance: 0.4
   projectilePrefab: {fileID: 5225826100215910739, guid: 657391d818175c54781db890243a2380, type: 3}
   firePoint: {fileID: 3261354843244883303}
+  damageMultiplier: 1
 --- !u!114 &8647126327120668905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,12 +398,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d70e566a6fcea2d4c96d4545381229d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OffTheClock.Combat.SliceEffect
-  topHalf: {fileID: 0}
-  bottomHalf: {fileID: 0}
+  topHalf: {fileID: 8165189140044866677}
+  bottomHalf: {fileID: 1370614221629800367}
   sliceForceMagnitude: 3
   destroyDelay: 2.5
 --- !u!4 &7867281757244887048 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2774220344278030320, guid: d034684aa05158b44a398484943c666d, type: 3}
+  m_PrefabInstance: {fileID: 5453350793147353080}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8165189140044866677 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4972354539003518067, guid: d034684aa05158b44a398484943c666d, type: 3}
   m_PrefabInstance: {fileID: 5453350793147353080}
   m_PrefabAsset: {fileID: 0}

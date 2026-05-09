@@ -48,6 +48,7 @@ namespace OffTheClock.UI
 
         void OnHealthChanged(float newHealth)
         {
+            Debug.Log($"[PlayerHealthBar] OnHealthChanged {newHealth}");
             if (fillImage == null || PlayerHealth.Instance == null) return;
             fillImage.fillAmount = Mathf.Clamp01(newHealth / PlayerHealth.Instance.maxHealth);
         }

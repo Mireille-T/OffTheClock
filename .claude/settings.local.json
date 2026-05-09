@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk 'NR>=60084' \"C:\\\\Users\\\\shanm\\\\AppData\\\\Local\\\\Unity\\\\Editor\\\\Editor.log\")",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}

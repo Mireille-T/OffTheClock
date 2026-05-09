@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Green_Laser
       objectReference: {fileID: 0}
+    - target: {fileID: 136330, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 499656, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.01104272
@@ -64,6 +68,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 10825254, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_Range
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 11489952, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
       propertyPath: m_lineWidth
       value: 67
@@ -78,14 +86,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1789699111024830065, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
       propertyPath: m_Height
-      value: 1.5
+      value: 61.507294
       objectReference: {fileID: 0}
     - target: {fileID: 1789699111024830065, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
       propertyPath: m_Radius
-      value: 0.05
+      value: 5.321542
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789699111024830065, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_Center.x
+      value: -0.7055006
       objectReference: {fileID: 0}
     - target: {fileID: 1789699111024830065, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
       propertyPath: m_Center.z
+      value: 25.242027
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789699111024830065, guid: 9a0c3383523899643a8d0661cfaca4e4, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -116,8 +132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38b36f4d051d6c44bbaa31744f20fa99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OffTheClock.Combat.EnemyProjectile
-  speed: 1
-  damage: 10
+  speed: 7
+  damage: 7.5
   lifetime: 6
   ensureVisible: 1
   visualColor: {r: 0.45891136, g: 1, b: 0.19999999, a: 1}
@@ -148,4 +164,4 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
